@@ -3,35 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daynamic product card</title>
+    <title>ChicBoutique - Discover Your Style</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <div class="wrapper">
-       
-        <nav class="navbar">
-             <div class="logo">
-            <img src="Group 6.png" alt="">
-        </div>
-<div class="nav-links">
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Offers</a></li>
-                <li><a href="#">Best Sellers</a></li>
-                <li><a href="#">About Us</a></li>
-       </div>
-            <div class="search">
-                <input type="text" placeholder="Search for products...">
-                <button type="submit">Search</button>
+    <header class="main-header">
+        <div class="wrapper">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="Group 6.png" alt="ChicBoutique Logo">
+                </a>
             </div>
-        </nav>
-        <div class="hero">
-            <h1>Discover Our Latest Products</h1>
-            <p>Explore a wide range of products tailored to your needs.</p>
-            <button  onclick="getProducts()" >Shop Now</button>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#offers">Offers</a></li>
+                    <li><a href="#bestsellers">Best Sellers</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search for products...">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </div>
+                <button class="cart-icon"><i class="fas fa-shopping-cart"></i> <span>0</span></button>
+            </div>
         </div>
-        <div class="product-card" id="cards">
-            
-    </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="wrapper">
+                <h1>Discover Your Next Favorite Item</h1>
+                <p>Curated collections of high-quality products, just for you.</p>
+                <button class="shop-now-btn" onclick="getProducts()">Shop Now</button>
+            </div>
+        </section>
+
+        <section class="product-listing" id="products">
+            <div class="wrapper">
+                <h2>Our Latest Collection</h2>
+                <div class="product-grid" id="cards">
+                    <!-- Product cards will be injected here by your JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- <section class="category-showcase" id="categories">
+            <div class="wrapper">
+                <h2>Explore Categories</h2>
+                <div class="categories-grid">
+                    <div class="category-card">
+                        <img src="https://placehold.co/200x150/FF6F61/FFFFFF?text=Electronics" alt="Electronics">
+                        <h3>Electronics</h3>
+                        <a href="#" class="btn-secondary">View All</a>
+                    </div>
+                    <div class="category-card">
+                        <img src="https://placehold.co/200x150/FFD700/FFFFFF?text=Apparel" alt="Apparel">
+                        <h3>Apparel</h3>
+                        <a href="#" class="btn-secondary">View All</a>
+                    </div>
+                    <div class="category-card">
+                        <img src="https://placehold.co/200x150/2ECC71/FFFFFF?text=Home+Goods" alt="Home Goods">
+                        <h3>Home Goods</h3>
+                        <a href="#" class="btn-secondary">View All</a>
+                    </div>
+                    <div class="category-card">
+                        <img src="https://placehold.co/200x150/3498DB/FFFFFF?text=Books" alt="Books">
+                        <h3>Books</h3>
+                        <a href="#" class="btn-secondary">View All</a>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <section class="testimonials-section">
+            <div class="wrapper">
+                <h2>What Our Customers Say</h2>
+                <div class="testimonial-cards">
+                    <div class="testimonial-card">
+                        <p>"Absolutely love the quality and service! My go-to for online shopping."</p>
+                        <h4>- Jane Doe</h4>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"Fast shipping and amazing products. Highly recommend ChicBoutique!"</p>
+                        <h4>- John Smith</h4>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"Found exactly what I was looking for. A truly delightful shopping experience."</p>
+                        <h4>- Emily White</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter-signup">
+            <div class="wrapper">
+                <h2>Stay Updated!</h2>
+                <p>Sign up for our newsletter to get the latest deals and new product announcements.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit">Subscribe Now</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="wrapper">
+            <div class="footer-columns">
+                <div class="footer-col">
+                    <h3>ChicBoutique</h3>
+                    <p>Your one-stop shop for unique and trending products.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#categories">Categories</a></li>
+                        <li><a href="#offers">Offers</a></li>
+                        <li><a href="#bestsellers">Best Sellers</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <p>Email: info@chicboutique.com</p>
+                    <p>Phone: +123 456 7890</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                developed by <a href="https://yourportfolio.com">Mehtab Hussain</a>
+                <br>
+                twitter: <a href="https://x.com/fav_gorgu">Mehtab</a>
+                <p>follow me on social media</p>
+            </div>
+        </div>
+    </footer>
+
     <script src="index.js"></script>
 </body>
 </html>

@@ -9,7 +9,7 @@ let cards = document.getElementById('cards');
 products.map(products => {
    let {title , price, images,} = products;
     cards.innerHTML += `
-          <div >
+          <div class="card">
             <img src="${images[0]}" height="200" width="200" alt="${title}">
             <h2>${title}</h2>
             <p class="price">$${price}</p>
@@ -18,3 +18,4 @@ products.map(products => {
    
 });
 }
+getProducts();
